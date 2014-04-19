@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH << "lib"
+
+require 'print_month.rb'
+
+m = ARGV[0]
+y = ARGV[1]
+
+puts_month_days(m, y)
