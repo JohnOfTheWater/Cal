@@ -13,7 +13,6 @@ def zeller(month, year)
   k = (op_year % 100)
   j = (op_year / 100)
   h = ((d + ((13*(m+1))/5) + k + (k/4) + (j/4)-(2*j)) % 7)
-  # Change date to start with Sunday instead of Saturday
   if h == 0
     return value = 6
   else
