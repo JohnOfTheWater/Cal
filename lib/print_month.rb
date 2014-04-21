@@ -24,9 +24,17 @@ def puts_month_days(m, y)
       line_counter = 0
     end
     if day < 10
-      print " "+day.to_s+" "
+      if line_counter == 6
+        print " "+day.to_s
+      else
+        print " "+day.to_s+" "
+      end
     else
-      print day.to_s+ " "
+      if line_counter == 6
+        print day.to_s
+      else
+        print day.to_s+ " "
+      end
     end
     day += 1
     line_counter +=1
