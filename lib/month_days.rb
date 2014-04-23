@@ -8,7 +8,7 @@ def days_in_month(m, y)
   when 2
     return days = leap_year(y) ? 29 : 28
   else
-    puts "Please use numbers only."
+    puts "Please use only numbers between 1 and 12."
   end
 end
 

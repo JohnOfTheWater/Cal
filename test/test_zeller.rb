@@ -23,5 +23,15 @@ class CalTest < MiniTest::Unit::TestCase
     assert_equal(6, start_day)
   end
 
+  def test_05_zeller_get_correct_day
+    start_day = zeller(12, 1992)
+    assert_equal(2, start_day)
+  end
+
+  def test_06_zeller_get_correct_day
+    start_day = zeller(11, 1992)
+    assert_equal(0, start_day)
+  end
+
 
 end

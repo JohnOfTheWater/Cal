@@ -8,6 +8,7 @@ def puts_month_days(m, y)
   days = "Su Mo Tu We Th Fr Sa"
   months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
   mtp = months[m-1]
+  if mtp != nil
   puts mtp.center(20)
   puts days
   #print days
@@ -40,4 +41,8 @@ def puts_month_days(m, y)
     line_counter +=1
   end
 puts ""
+
+else
+puts "please enter a month number between 1 and 12"
+end
 end
