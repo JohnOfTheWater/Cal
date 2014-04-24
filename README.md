@@ -8,3 +8,4 @@ in prompt type:
 - ./cal month(one or two digits) year(four digits) [to display the given month]
 - ./cal year(four digits) [to display all months for that year]
 - ./cal r3 year(four digits) [to display all months for that year using three rows instead of four]
+- ./cal r2 year(four digits) [to display all months for that year using two rows instead of four]

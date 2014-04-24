@@ -3,9 +3,9 @@ require 'print_months.rb'
 
 
 def print_3_rows(y)
-  i = 1
-  str = []
-  month = []
+  i = 1 #<-- first month of the year
+  str = [] #<-- empty box for month string
+  months = [] #<-- empty box for every chunk of string of the calendar
   12.times do
     str << puts_months_days(i, y)
     line_1 = str[0].slice(1..19)
@@ -26,28 +26,28 @@ def print_3_rows(y)
     else
       line_8 = "\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s\s"
     end
-    month << line_1
-    month << line_2
-    month << line_3
-    month << line_4
-    month << line_5
-    month << line_6
-    month << line_7
-    month << line_8
+    months << line_1
+    months << line_2
+    months << line_3
+    months << line_4
+    months << line_5
+    months << line_6
+    months << line_7
+    months << line_8
     str = []
     i += 1
   end
-  puts y.to_s.center(85)
+  puts y.to_s.center(85) #<-- printings start from here
   k = 0
   3.times do
-    print month[0+k].center(20) + "  " + month[8+k].center(20) + "  " + month[16+k].center(20) + "  " + month[24+k].center(20) + "\n"
-    print month[1+k] + "  " + month[9+k] + "  " + month[17+k] + "  " + month[25+k] + "\n"
-    print month[2+k] + "  " + month[10+k] + "  " + month[18+k] + "  " + month[26+k] + "\n"
-    print month[3+k] + "  " + month[11+k] + "  " + month[19+k] + "  " + month[27+k] + "\n"
-    print month[4+k] + "  " + month[12+k] + "  " + month[20+k] + "  " + month[28+k] + "\n"
-    print month[5+k] + "  " + month[13+k] + "  " + month[21+k] + "  " + month[29+k] + "\n"
-    print month[6+k] + "  " + month[14+k] + "  " + month[22+k] + "  " + month[30+k] + "\n"
-    print month[7+k] + "  " + month[15+k] + "  " + month[23+k] + "  " + month[31+k] + "\n"
+    print months[0+k].center(20) + "  " + months[8+k].center(20) + "  " + months[16+k].center(20) + "  " + months[24+k].center(20) + "\n"
+    print months[1+k] + "  " + months[9+k] + "  " + months[17+k] + "  " + months[25+k] + "\n"
+    print months[2+k] + "  " + months[10+k] + "  " + months[18+k] + "  " + months[26+k] + "\n"
+    print months[3+k] + "  " + months[11+k] + "  " + months[19+k] + "  " + months[27+k] + "\n"
+    print months[4+k] + "  " + months[12+k] + "  " + months[20+k] + "  " + months[28+k] + "\n"
+    print months[5+k] + "  " + months[13+k] + "  " + months[21+k] + "  " + months[29+k] + "\n"
+    print months[6+k] + "  " + months[14+k] + "  " + months[22+k] + "  " + months[30+k] + "\n"
+    print months[7+k] + "  " + months[15+k] + "  " + months[23+k] + "  " + months[31+k] + "\n"
     k += 32
   end
 end
