@@ -21,12 +21,6 @@ def puts_months_days(m, y)
   str << first_row
   #days_array = ""
   num_of_days.times do
-=begin
-    if line_counter > 6
-      print "\n"
-      line_counter = 0
-    end
-=end
     if day < 10
       if line_counter == 6
         str << " "+day.to_s

@@ -39,7 +39,8 @@ def print_3_rows(y)
   end
   puts y.to_s.center(85) #<-- printings start from here
   k = 0
-  3.times do
+  rows = 3
+  rows.times do
     print months[0+k].center(20) + "  " + months[8+k].center(20) + "  " + months[16+k].center(20) + "  " + months[24+k].center(20) + "\n"
     print months[1+k] + "  " + months[9+k] + "  " + months[17+k] + "  " + months[25+k] + "\n"
     print months[2+k] + "  " + months[10+k] + "  " + months[18+k] + "  " + months[26+k] + "\n"
